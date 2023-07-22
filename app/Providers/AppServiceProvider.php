@@ -1,8 +1,10 @@
 <?php
 
 namespace App\Providers;
-
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
+use App\Contact;
+use App\Social;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +25,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $Contact = Contact::find(1);
+        View::share('Contact', $Contact);
+
+        $Social = Social::find(1);
+        View::share('Social', $Social);
     }
 }
