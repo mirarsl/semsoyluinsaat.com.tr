@@ -10,10 +10,10 @@
                         <div class="box-content background-section p-30">
                             <div class="metas d-inline-block mb-15">
                                 <span>{{$project->getTranslatedAttribute('type')}}</span>
-                                <span>{{ $project->stage == 1 ? 'Devam Ediyor' : 'Tamamlandı' }}</span>
+                                <span>{{ $project->stage == 1 ? __('project1') : __('project2') }}</span>
                             </div>
                             <h4 class="title-block sec-title">
-                                <a class="effect-ajax" href="{{route('routes.project',$project->getTranslatedAttribute('slug'))}}">{{$project->getTranslatedAttribute('title')}}</a>
+                                <a  href="{{route('routes.project',$project->getTranslatedAttribute('slug'))}}">{{$project->getTranslatedAttribute('title')}}</a>
                             </h4>
                         </div>
                     </div>

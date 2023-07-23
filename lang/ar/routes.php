@@ -3,7 +3,6 @@
 return [
     "homepage"    =>  "/",
     "page"    =>  "{slug}",
-    "project"    =>  "mashrue/{slug}",
+    "project"    =>  "almasharie/{slug}",
     "news"    =>  "akhbar/{slug}",
-
 ];

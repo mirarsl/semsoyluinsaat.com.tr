@@ -11,7 +11,7 @@
     <header class="header-project p-relative h-100-v over-hidden dsn-header-animation v-dark-head">
         <div data-dsn-ajax="img" class="p-absolute dsn-hero-parallax-img transform-3d w-100 h-100 bg-container over-hidden"
             data-overlay="7">
-            <img class="cover-bg-img " src="{{ asset($Project->image) }}" alt="">
+            <img class="cover-bg-img " src="{{ asset($Project->image) }}" alt="{{__('name')}}">
         </div>
         <div
             class="container d-flex align-items-center justify-content-center text-center h-100 p-relative dsn-z-index-2 pb-80">
@@ -20,7 +20,7 @@
                     <div class="intro-title">
                         <div class="metas d-inline-block mb-25">
                             <span>{{ $Project->getTranslatedAttribute('type') }}</span>
-                            <span>{{ $Project->stage == 1 ? 'Devam Ediyor' : 'Tamamlandı' }}</span>
+                            <span>{{ $Project->stage == 1 ? __('project1') : __('project2') }}</span>
                         </div>
                         <div class="hero-title dsn-load-animate ">
                             <div class="d-inline-block">
@@ -40,7 +40,7 @@
                 <div class="d-grid grid-1-half grid-md-1">
                     <div class="box-text">
                         <div class="mb-30 p-relative">
-                            <h5 class="sub-heading mb-15 pb-15">Şemsoylu İnşaat</h5>
+                            <h5 class="sub-heading mb-15 pb-15">{{__('name')}}</h5>
                             <h2 class="section-title text-uppercase">{{ $Project->getTranslatedAttribute('title') }}</h2>
                         </div>
                         <p class="sm-title-block">{{ $Project->getTranslatedAttribute('spot') }}</p>
@@ -48,12 +48,12 @@
                     <div class="list-info-project border-left pl-30 h-100">
                         <ul>
                             <li>
-                                <h5 class="sm-title-block mb-5">Tür:</h5>
+                                <h5 class="sm-title-block mb-5">{{__('project3')}}</h5>
                                 <span>{{ $Project->getTranslatedAttribute('type') }}</span>
                             </li>
                             <li>
-                                <h5 class="sm-title-block mb-5">Proje Durumu:</h5>
-                                <span>{{ $Project->stage == 1 ? 'Devam Ediyor' : 'Tamamlandı' }}</span>
+                                <h5 class="sm-title-block mb-5">{{__('project4')}}</h5>
+                                <span>{{ $Project->stage == 1 ? __('project1') : __('project2') }}</span>
                             </li>
                         </ul>
                     </div>
@@ -66,7 +66,7 @@
                     <div class="d-grid grid-md-3  over-hidden">
                         @for ($i = 0; $i < 3; $i++)
                             <a href="{{ asset($Gallery[$i]) }}" class="p-relative over-hidden d-flex">
-                                <img src="{{ asset($Gallery[$i]) }}" alt="" class="cover-bg-img">
+                                <img src="{{ asset($Gallery[$i]) }}" alt="{{__('name')}}" class="cover-bg-img">
                             </a>
                         @endfor
                     </div>
@@ -78,12 +78,12 @@
                 <div class="d-grid grid-md-2  over-hidden">
                     <div class="">
                         <div class="mb-70 p-relative">
-                            <h5 class="sub-heading mb-15 pb-15">Şemsoylu İnşaat </h5>
+                            <h5 class="sub-heading mb-15 pb-15">{{__('name')}} </h5>
                             <h2 class="section-title text-uppercase">
                                 <strong>{{ $Project->getTranslatedAttribute('title') }}</strong>
                             </h2>
                         </div>
-                        <h4 class="title-block mb-30">Projemiz hakkında bilgi sahibi olun</h4>
+                        <h4 class="title-block mb-30">{{__('project5')}}</h4>
                         <div class="sm-title-block max-w570">
                             {!! $Project->getTranslatedAttribute('text') !!}
                         </div>
@@ -91,7 +91,7 @@
                     @if (count($Gallery) >= 6)
                         @for ($i = 3; $i < 6; $i++)
                             <a href="{{ asset($Gallery[$i]) }}" class="p-relative over-hidden h-v-60 d-flex">
-                                <img src="{{ asset($Gallery[$i]) }}" alt="" class="cover-bg-img">
+                                <img src="{{ asset($Gallery[$i]) }}" alt="{{__('name')}}" class="cover-bg-img">
                             </a>
                         @endfor
                     @endif
@@ -102,7 +102,7 @@
         @isset($Gallery[6])
             <div class="container-fluid">
                 <div class="img-box-small dsn-parallax-full parallax-responsive" data-dsn-grid="move-up">
-                    <img src="{{ asset($Gallery[6]) }}" alt="">
+                    <img src="{{ asset($Gallery[6]) }}" alt="{{__('name')}}">
                     <div class="cap">
                         <span>{{ $Project->getTranslatedAttribute('title') }}</span>
                     </div>
@@ -115,7 +115,7 @@
                     <div class="d-grid grid-md-2  over-hidden">
                         @for ($i = 7; $i < count($Gallery); $i++)
                             <a href="{{ asset($Gallery[$i]) }}" class="p-relative over-hidden h-v-60 d-flex">
-                                <img src="{{ asset($Gallery[$i]) }}" alt="" class="cover-bg-img">
+                                <img src="{{ asset($Gallery[$i]) }}" alt="{{__('name')}}" class="cover-bg-img">
                             </a>
                         @endfor
                     </div>
@@ -134,7 +134,7 @@
                         <div class="intro-project w-100 h">
                             <div class="intro-title text-center">
                                 <div class="metas d-inline-block mb-25 ml-auto mr-auto ">
-                                    <span>{{ $Next->getTranslatedAttribute('type') }}</span><span>{{ $Project->stage == 1 ? 'Devam Ediyor' : 'Tamamlandı' }}</span>
+                                    <span>{{ $Next->getTranslatedAttribute('type') }}</span><span>{{ $Project->stage == 1 ? __('project1') : __('project2') }}</span>
                                 </div>
                                 <div class="hero-title">
                                     <a href="{{ route('routes.project', $Next->getTranslatedAttribute('slug')) }}"
@@ -153,4 +153,15 @@
         @endif
 
     </div>
+@endsection
+@section('lang')
+    @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+        <li>
+            <a rel="alternate" hreflang="{{ $localeCode }}"
+                href="{{ LaravelLocalization::getURLFromRouteNameTranslated($localeCode, 'routes.project', ['slug'=>$Project->getTranslatedAttribute('slug',$localeCode)]) }}">
+                <span class="dsn-title-menu">{{ $properties['native'] }}</span>
+                <span class="dsn-meta-menu">{{ $localeCode }}</span>
+            </a>
+        </li>
+    @endforeach
 @endsection

@@ -17,7 +17,7 @@
                             <p class="mt-15">{!!substr(strip_tags($new->getTranslatedAttribute('text')),0,100)!!}
                             </p>
                             <a href="{{route('routes.news',$new->getTranslatedAttribute('slug'))}}" class="text-link mt-20 d-flex align-item-center">
-                                <span class="text text-uppercase d-flex align-item-center">Devamını Gör</span>
+                                <span class="text text-uppercase d-flex align-item-center">{{__('news1')}}</span>
                                 <span class="icon d-flex align-item-center justify-content-center">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

@@ -1,7 +1,7 @@
 <section class="about section-margin">
     <div class="container mb-70 p-relative">
-        <h5 class="sub-heading mb-15 pb-15">Biz Kimiz</h5>
-        <h2 class="section-title text-uppercase">Hakkımızda</h2>
+        <h5 class="sub-heading mb-15 pb-15">{{__('index2')}}</h5>
+        <h2 class="section-title text-uppercase">{{__('index3')}}</h2>
     </div>
     <div class="container">
         <div class="row grid-md-2">
@@ -21,7 +21,7 @@
                     <div class="box-item">
                         <h5
                             class="sm-title-block text-uppercase p-relative line-shap  line-shap-after d-inline-block mb-15">
-                            <span class="p-10 background-section dsn-load-animate">Misyonumuz</span>
+                            <span class="p-10 background-section dsn-load-animate">{{__('about1')}}</span>
                         </h5>
                         {!! $Content['about']->getTranslatedAttribute('mission') !!}
                     </div>
@@ -31,7 +31,7 @@
                     <div class="box-item">
                         <h5
                             class="sm-title-block text-uppercase p-relative line-shap  line-shap-after d-inline-block mb-15">
-                            <span class="p-10 background-section dsn-load-animate">Vizyonumuz</span>
+                            <span class="p-10 background-section dsn-load-animate">{{__('about2')}}</span>
                         </h5>
                         {!! $Content['about']->getTranslatedAttribute('vision') !!}
                     </div>
@@ -46,9 +46,9 @@
 
 <section class="awards section-margin">
     <div class="container mb-70 p-relative">
-        <h5 class="sub-heading mb-15 pb-15">Şemsoylu İnşaat</h5>
+        <h5 class="sub-heading mb-15 pb-15">{{__('name')}}</h5>
 
-        <h2 class="section-title text-uppercase">Tarihçemiz</h2>
+        <h2 class="section-title text-uppercase">{{__('about3')}}</h2>
     </div>
 
     <div class="container">

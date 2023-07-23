@@ -5,7 +5,7 @@
             <header class="header-page over-hidden p-relative h-100-v dsn-header-animation">
                 <div class="bg-container dsn-hero-parallax-img p-absolute top-0 w-100 h-100" data-dsn-ajax="img"
                     data-overlay="0">
-                    <img class="cover-bg-img" src="{{ asset($Page->image) }}" alt="">
+                    <img class="cover-bg-img" src="{{ asset($Page->image) }}" alt="{{__('name')}}">
                 </div>
                 <div
                     class="dsn-container dsn-left-container h-100 d-flex flex-column justify-content-end dsn-z-index-2 p-relative">
@@ -13,9 +13,9 @@
                         <div class="d-grid justify-content-center grid-lg-3 d-grid-no-space">
                             <div class="item-info background-section pl-30 pr-30 pt-50 pb-50 max-w570">
                                 <p class="subtitle p-relative line-shap  line-shap-after">
-                                    <span class="pl-10 pr-10 background-main dsn-load-animate">Tarihçe</span>
+                                    <span class="pl-10 pr-10 background-main dsn-load-animate">{{__('index1')}}</span>
                                 </p>
-                                <h1 class="title-block mt-15 dsn-load-animate text-uppercase">Şemsoylu İnşaat</h1>
+                                <h1 class="title-block mt-15 dsn-load-animate text-uppercase">{{__('name')}}</h1>
                             </div>
                             <div class="item-info background-section pl-30 pr-30 pt-50 pb-50 max-w570">
                                 <div class="sm-title-block">{!! substr($About->getTranslatedAttribute('history'), 0, 215) !!}..</div>
@@ -31,8 +31,8 @@
                     <div class="d-grid grid-lg-2">
                         <div class="box-text">
                             <div class="mb-30 p-relative">
-                                <h5 class="sub-heading mb-15 pb-15">Biz Kimiz</h5>
-                                <h2 class="section-title text-uppercase">Hakkımızda</h2>
+                                <h5 class="sub-heading mb-15 pb-15">{{__('index2')}}</h5>
+                                <h2 class="section-title text-uppercase">{{__('index3')}}</h2>
                             </div>
                             {!! substr($About->getTranslatedAttribute('about'), 0, 500) !!}..
                         </div>
@@ -40,14 +40,14 @@
                             @if (!empty($About->image))
                                 <div class="box-img">
                                     <div class="inner">
-                                        <img src="{{ asset($About->image) }}" alt="" />
+                                        <img src="{{ asset($About->image) }}" alt="{{__('name')}}" />
                                     </div>
                                 </div>
                             @endif
                             @if (!empty($About->image2))
                                 <div class="box-img d-flex flex-column justify-content-end">
                                     <div class="inner">
-                                        <img src="{{ asset($About->image2) }}" alt="" />
+                                        <img src="{{ asset($About->image2) }}" alt="{{__('name')}}" />
                                     </div>
                                 </div>
                             @endif
@@ -59,8 +59,8 @@
                 <div class="wrapper">
                     <section class="services section-margin">
                         <div class="container mb-70 p-relative text-center">
-                            <h5 class="sub-heading mb-15 pl-20 pb-15 ml-auto mr-auto text-center">Hizmetlerimiz</h5>
-                            <h2 class="section-title text-uppercase">Çalışma Alanlarımız</h2>
+                            <h5 class="sub-heading mb-15 pl-20 pb-15 ml-auto mr-auto text-center">{{__('index4')}}</h5>
+                            <h2 class="section-title text-uppercase">{{__('index5')}}</h2>
                         </div>
                         <div class="container">
                             <div class="d-grid grid-md-3 grid-sm-2">
@@ -89,10 +89,9 @@
                                 <div class="col-lg-4 order-lg-2">
                                     <div class="box-info mt-md-section">
                                         <div class=" p-relative sm-mb-title">
-                                            <h5 class="sub-heading mb-15 pb-15">Projelerimiz</h5>
-                                            <h2 class="section-title text-uppercase mb-30">Kalite <strong> İnşa
-                                                    Ediyoruz</strong></h2>
-                                            <p>Her detayda kaliteye odaklanarak, dayanıklı ve estetik yapılar oluşturuyoruz.</p>
+                                            <h5 class="sub-heading mb-15 pb-15">{{__('index6')}}</h5>
+                                            <h2 class="section-title text-uppercase mb-30">{!!__('index7')!!}</h2>
+                                            <p>{{__('index8')}}</p>
                                         </div>
                                         <div class="dsn-pagination">
                                             <div class="swiper-prev slider-button-prev">
@@ -156,7 +155,7 @@
                                                             <div class="text-wrapper">
                                                                 <div class="metas d-inline-block mb-10">
                                                                     <span>{{ $project->getTranslatedAttribute('type') }}</span>
-                                                                    <span>{{ $project->stage == 1 ? 'Devam Ediyor' : 'Tamamlandı' }}</span>
+                                                                    <span>{{ $project->stage == 1 ? __('project1') : __('project2') }}</span>
                                                                 </div>
                                                                 <h4 class="title-block text-uppercase sec-title">
                                                                     {{ $project->getTranslatedAttribute('title') }}</h4>
@@ -184,10 +183,10 @@
                                                 <div class="left-box pr-60">
                                                     <div class="mb-30 p-relative">
                                                         <h5 class="sub-heading mb-15 pb-15">
-                                                            Şemsoylu İnşaat
+                                                            {{__('name')}}
                                                         </h5>
                                                         <h2 class="section-title text-uppercase">
-                                                            Derin <strong>Tecrübemiz</strong> ile
+                                                            {!!__('index9')!!}
                                                         </h2>
                                                     </div>
                                                     <p class="max-w570">
@@ -204,10 +203,8 @@
                                                 <div class="right-box background-section section-padding pl-60 pr-60">
 
                                                     <div class="mb-30 p-relative">
-                                                        <h5 class="sub-heading mb-15 pb-15">Yapı Taşlarımız</h5>
-                                                        <h2 class="section-title text-uppercase">Gurur duyduğumuz
-                                                            <strong>istatistikler</strong>
-                                                        </h2>
+                                                        <h5 class="sub-heading mb-15 pb-15">{{__('index10')}}</h5>
+                                                        <h2 class="section-title text-uppercase">{!!__('index11')!!}</h2>
                                                     </div>
                                                     @for ($i = 1; $i < count($Counter); $i++)
                                                         <div class="fact-item d-flex">
@@ -234,8 +231,8 @@
                     @empty(!$News)
                         <div class="our-blog p-relative">
                             <div class="container mb-70 p-relative">
-                                <h5 class="sub-heading mb-15 pb-15">Son Haberler</h5>
-                                <h2 class="section-title text-uppercase">Bizden son haberler</h2>
+                                <h5 class="sub-heading mb-15 pb-15">{{__('index12')}}</h5>
+                                <h2 class="section-title text-uppercase">{{__('index13')}}</h2>
                             </div>
                             @forelse ($News as $new)
                                 <div class="blog-item-list p-relative section-padding">
@@ -271,17 +268,17 @@
                                 @if (!empty($About->image3))
                                     <div class="box-img">
                                         <div class="box-img-inner">
-                                            <img src="{{ asset($About->image3) }}" alt="">
+                                            <img src="{{ asset($About->image3) }}" alt="{{__('name')}}">
                                         </div>
                                     </div>
                                 @endif
 
                                 <div class="box-content d-flex flex-column justify-content-center ">
                                     <div class="box-content-inner">
-                                        <h2 class="heading-h2 text-uppercase mb-30">Bizimle İletişime geç</h2>
-                                        <p>Projelerimiz hakkında bilgi almak istiyorsan bizimle hemen iletişime geç.</p>
-                                        <a href="{{route('routes.page','iletisim')}}" class="main-btn effect-ajax mt-30">
-                                            <span class="text">İletişim</span>
+                                        <h2 class="heading-h2 text-uppercase mb-30">{{__('index14')}}</h2>
+                                        <p>{{__('index15')}}</p>
+                                        <a href="{{route('routes.page',__('link5'))}}" class="main-btn effect-ajax mt-30">
+                                            <span class="text">{{__('menu5')}}</span>
                                             <span class="line-btn line-btn-top-left"></span>
                                             <span class="line-btn line-btn-top-right"></span>
                                             <span class="line-btn line-btn-bottom-left"></span>

@@ -78,7 +78,7 @@ class PageController extends Controller
         );
 
         if (!$executed) {
-            return back()->with(['status' => 'danger', 'message' => "Yeni mesaj göndermek için beklemeniz gerek."]);
+            return back()->with(['status' => 'danger', 'message' => __('response1')]);
         }
 
         $validated = $request->validate([
@@ -94,29 +94,28 @@ class PageController extends Controller
         $Message->email = $Data['email'];
         $Message->message = $Data['message'];
         if ($Message->save()) {
-            // $mail = new PHPMailer(true);
-            // $mail->isSMTP(); //Send using SMTP
-            // $mail->Host = 'mail.kurumsaleposta.com'; //Set the SMTP server to send through
-            // $mail->SMTPAuth = true; //Enable SMTP authentication
-            // $mail->Username = 'info@semsoyluinsaat.com.tr'; //SMTP username
-            // $mail->Password = 'SemsoyluInsaat23!'; //SMTP password
-            // $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; //Enable implicit TLS encryption
-            // $mail->Port = 465; //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+            $mail = new PHPMailer(true);
+            $mail->isSMTP(); 
+            $mail->Host = env('MAIL_HOST'); 
+            $mail->SMTPAuth = true;
+            $mail->Username = env('MAIL_USERNAME'); 
+            $mail->Password = env('MAIL_PASSWORD');
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; 
+            $mail->Port = 465;
 
-            // //Recipients
-            // $mail->setFrom('noreply@semsoyluinsaat.com.tr', 'Şemsoylu İnşaat');
-            // $mail->addAddress('info@semsoyluinsaat.com.tr'); //Add a recipient
+            $mail->setFrom('noreply@semsoyluinsaat.com.tr', 'Şemsoylu İnşaat');
+            $mail->addAddress('info@semsoyluinsaat.com.tr'); 
 
-            // $mail->isHTML(true); //Set email format to HTML
-            // $mail->Subject = 'İletişim Mesajı Geldi';
-            // $mail->Body = view("email.contact")->with('Request', $request);
-            // $mail->AltBody = 'Mesajı site üzerinden görüntülemek için paneli ziyaret ediniz.';
+            $mail->isHTML(true); 
+            $mail->Subject = 'İletişim Mesajı Geldi';
+            $mail->Body = view("email.contact")->with('Request', $request);
+            $mail->AltBody = 'Mesajı site üzerinden görüntülemek için paneli ziyaret ediniz.';
 
-            // $mail->send();
+            $mail->send();
 
-            return back()->with(['status' => 'success', 'message' => "Mesajınız başarılı bir şekilde tarafımıza iletildi"]);
+            return back()->with(['status' => 'success', 'message' => __('response2')]);
         } else {
-            return back()->with(['status' => 'danger','message'=>"Bir problem oluştu, lütfen daha sonra tekrar deneyiniz."]);
+            return back()->with(['status' => 'danger', 'message' => __('response3')]);
         }
     }
 }

@@ -5,7 +5,7 @@
         <div class="container">
             <div class="content-hero p-relative d-flex flex-column h-100 dsn-hero-parallax-fill">
                 <p class="subtitle p-relative line-shap  line-shap-after">
-                    <span class="pl-10 pr-10 background-section dsn-load-animate">Şemsoylu İnşaat</span>
+                    <span class="pl-10 pr-10 background-section dsn-load-animate">{{ __('name') }}</span>
                 </p>
                 <div class="hero-title mt-30 dsn-load-animate text-transform-upper ">
                     <div class="d-inline-block">
@@ -43,4 +43,15 @@
             @break
         @endswitch
     </div>
+@endsection
+@section('lang')
+    @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+        <li>
+            <a rel="alternate" hreflang="{{ $localeCode }}"
+                href="{{ LaravelLocalization::getURLFromRouteNameTranslated($localeCode, 'routes.page', ['slug' => $Page->getTranslatedAttribute('slug', $localeCode)]) }}">
+                <span class="dsn-title-menu">{{ $properties['native'] }}</span>
+                <span class="dsn-meta-menu">{{ $localeCode }}</span>
+            </a>
+        </li>
+    @endforeach
 @endsection

@@ -19,7 +19,7 @@
     <div class="wrapper">
         <section class="about section-margin mt-60">
             <div class="container mb-70 p-relative">
-                <h5 class="sub-heading mb-15 pb-15">Şemsoylu İnşaat</h5>
+                <h5 class="sub-heading mb-15 pb-15">{{__('name')}}</h5>
                 <h2 class="section-title text-uppercase">{{$News->getTranslatedAttribute('title')}}</h2>
             </div>
             <div class="container">
@@ -31,4 +31,15 @@
             </div>
         </section>
     </div>
+@endsection
+@section('lang')
+    @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+        <li>
+            <a rel="alternate" hreflang="{{ $localeCode }}"
+                href="{{ LaravelLocalization::getURLFromRouteNameTranslated($localeCode, 'routes.news', ['slug'=>$News->getTranslatedAttribute('slug',$localeCode)]) }}">
+                <span class="dsn-title-menu">{{ $properties['native'] }}</span>
+                <span class="dsn-meta-menu">{{ $localeCode }}</span>
+            </a>
+        </li>
+    @endforeach
 @endsection

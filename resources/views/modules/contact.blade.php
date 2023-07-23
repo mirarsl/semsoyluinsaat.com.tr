@@ -1,9 +1,8 @@
 <section class="contact-up section-padding background-section">
     <div class="container mb-50 p-relative">
-        <h5 class="sub-heading mb-15 pb-15">İletişim</h5>
-        <h2 class="section-title text-uppercase">Bizimle İletişime Geç</h2>
-        <p class="sm-title-block pb-50 border-bottom mt-20">Projelerimiz hakkında bilgi almak için bizimle iletişime
-            geçmeyi unutmayın!</p>
+        <h5 class="sub-heading mb-15 pb-15">{{__('contact1')}}</h5>
+        <h2 class="section-title text-uppercase">{{__('contact2')}}</h2>
+        <p class="sm-title-block pb-50 border-bottom mt-20">{{__('contact3')}}</p>
     </div>
     <div class="container">
         <div class="row">
@@ -11,7 +10,7 @@
                 <div class="d-grid grid-md-3 grid-sm-2 mt-50 pb-50 border-bottom">
                     <div class="item">
                         <h4 class="subtitle p-relative line-shap  line-shap-after mb-15 text-uppercase">
-                            <span class="p-10 background-main "> Adres</span>
+                            <span class="p-10 background-main "> {{__('contact4')}}</span>
                         </h4>
                         <p class="sm-title-block">{{ $Contact->address }}</p>
                         @empty(!$Contact->address2)
@@ -20,7 +19,7 @@
                     </div>
                     <div class="item">
                         <h4 class="subtitle p-relative line-shap  line-shap-after mb-15 text-uppercase">
-                            <span class="p-10 background-main "> Telefon</span>
+                            <span class="p-10 background-main "> {{__('contact5')}}</span>
                         </h4>
                         <a href="tel:{{ $Contact->phone }}" class="mt-15 theme-color">
                             <i class="fas fa-phone"></i>
@@ -35,7 +34,7 @@
                     </div>
                     <div class="item">
                         <h4 class="subtitle p-relative line-shap  line-shap-after mb-15 text-uppercase">
-                            <span class="p-10 background-main "> E-Posta</span>
+                            <span class="p-10 background-main "> {{__('contact6')}}</span>
                         </h4>
                         <a href="mailto:{{ $Contact->email }}" class="mt-15 theme-color">
                             <i class="fas fa-envelope"></i>
@@ -63,29 +62,29 @@
                     <div class="input__wrap controls row">
                         <div class="col-md-6 form-group">
                             <div class="entry-box">
-                                <input type="text" name="name" placeholder="İsim & Soyisim" required="required"
-                                    data-error="Lütfen bu alanı doldurun.">
+                                <input type="text" name="name" placeholder="{{__('contact7')}}" required="required"
+                                    data-error="{{__('error1')}}">
                             </div>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="col-md-6 form-group">
                             <div class="entry-box">
-                                <input id="form_email" type="email" name="email" placeholder="E-Posta"
-                                    required="required" data-error="Lütfen geçerli bir e-posta adresi girin.">
+                                <input id="form_email" type="email" name="email" placeholder="{{__('contact8')}}"
+                                    required="required" data-error="{{__('error2')}}">
                             </div>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="col-md-12 form-group">
                             <div class="entry-box">
-                                <textarea id="form_message" class="form-control" name="message" placeholder="Mesajınız" required="required"
-                                    data-error="Lütfen bu alanı doldurun."></textarea>
+                                <textarea id="form_message" class="form-control" name="message" placeholder="{{__('contact9')}}" required="required"
+                                    data-error="{{__('error1')}}"></textarea>
                             </div>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="col-md-12 text-center">
                             <div class="image-zoom w-auto d-inline-block move-circle inner-btn v-dark-head"
                                 data-dsn="parallax">
-                                <button type="submit" class="btn p-3 dsn-btn v-dark text-uppercase">Gönder</button>
+                                <button type="submit" class="btn p-3 dsn-btn v-dark text-uppercase">{{__('contact10')}}</button>
                             </div>
                         </div>
                     </div>

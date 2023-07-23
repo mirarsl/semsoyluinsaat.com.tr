@@ -23,7 +23,7 @@
 
     <link href="{{ asset('assets/css/plugins.css') }}" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-    
+
     @yield('links')
 </head>
 
@@ -58,7 +58,7 @@
             </p>
         </div>
 
-        <span class="loading-text text-uppercase mt-30">Yükleniyor ...</span>
+        <span class="loading-text text-uppercase mt-30">{{ __('loading') }} ...</span>
 
     </div>
     <div class="site-header dsn-load-animate dsn-container">
@@ -66,16 +66,16 @@
             <div class="inner-header p-relative">
                 <div class="main-logo">
                     <a href="{{ route('routes.homepage') }}" data-dsn="parallax">
-                        <img class="light-logo" src="{{ asset('assets/img/logo.svg') }}" alt="" />
-                        <img class="dark-logo" src="{{ asset('assets/img/logo.svg') }}" alt="" />
+                        <img class="light-logo" src="{{ asset('assets/img/logo.svg') }}" alt="{{ __('name') }}" />
+                        <img class="dark-logo" src="{{ asset('assets/img/logo.svg') }}" alt="{{ __('name') }}" />
                     </a>
                 </div>
             </div>
             <div class="menu-icon d-flex align-items-baseline">
                 <div class="text-menu p-relative  font-heading text-transform-upper">
-                    <div class="p-absolute text-button">Menü</div>
-                    <div class="p-absolute text-open">Açık</div>
-                    <div class="p-absolute text-close">Kapalı</div>
+                    <div class="p-absolute text-button">{{ __('menu') }}</div>
+                    <div class="p-absolute text-open">{{ __('menuOpen') }}</div>
+                    <div class="p-absolute text-close">{{ __('menuClose') }}</div>
                 </div>
                 <div class="icon-m" data-dsn="parallax" data-dsn-move="10">
                     <span class="menu-icon-line p-relative d-inline-block icon-top"></span>
@@ -84,66 +84,93 @@
                 </div>
             </div>
             <nav class="accent-menu dsn-container main-navigation p-absolute  w-100  d-flex align-items-baseline ">
-                <div class="menu-cover-title">Menü</div>
+                <div class="menu-cover-title">{{ __('menu') }}</div>
                 <ul class="extend-container p-relative d-flex flex-column justify-content-center h-100">
 
                     <li class="dsn-active dsn-drop-down">
                         <a href="{{ route('routes.homepage') }}" class="user-no-selection">
 
-                            <span class="dsn-title-menu">Anasayfa</span>
+                            <span class="dsn-title-menu">{{ __('menu1') }}</span>
                             <span class="dsn-meta-menu">01</span>
                             <span class="dsn-bg-arrow"></span>
                         </a>
                     </li>
 
                     <li class="dsn-drop-down">
-                        <a href="javascript:void(0);" class="user-no-selection">
+                        <a href="{{ __('link2') }}" class="user-no-selection">
 
-                            <span class="dsn-title-menu">Kurumsal</span>
+                            <span class="dsn-title-menu">{{ __('menu2') }}</span>
                             <span class="dsn-meta-menu">02</span>
                             <span class="dsn-bg-arrow"></span>
                         </a>
                         <ul>
                             <li class="dsn-back-menu">
-                                <img src="{{ asset('assets/img/left-chevron.svg') }}" alt="">
-                                <span class="dsn-title-menu">Geri Dön</span>
+                                <img src="{{ asset('assets/img/left-chevron.svg') }}" alt="{{ __('name') }}">
+                                <span class="dsn-title-menu">{{ __('menuBack') }}</span>
                             </li>
                             <li>
-                                <a href="{{ route('routes.page', 'hakkimizda') }}">
-                                    <span class="dsn-title-menu">Biz Kimiz</span>
+                                <a href="{{ route('routes.page', __('link2_1')) }}">
+                                    <span class="dsn-title-menu">{{ __('menu2_1') }}</span>
                                     <span class="dsn-meta-menu">01</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('routes.page', 'insan-kaynaklari') }}">
-                                    <span class="dsn-title-menu">İnsan Kaynakları</span>
+                                <a href="{{ route('routes.page', __('link2_2')) }}">
+                                    <span class="dsn-title-menu">{{ __('menu2_2') }}</span>
                                     <span class="dsn-meta-menu">02</span>
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="{{ route('routes.page', 'projeler') }}">
-                            <span class="dsn-title-menu">Projeler</span>
+                        <a href="{{ route('routes.page', __('link3')) }}">
+                            <span class="dsn-title-menu">{{ __('menu3') }}</span>
                             <span class="dsn-meta-menu">03</span>
                             <span class="dsn-bg-arrow"></span>
                         </a>
                     </li>
 
                     <li>
-                        <a href="{{ route('routes.page', 'haberler') }}">
+                        <a href="{{ route('routes.page', __('link4')) }}">
 
-                            <span class="dsn-title-menu">Haberler</span>
+                            <span class="dsn-title-menu">{{ __('menu4') }}</span>
                             <span class="dsn-meta-menu">04</span>
                             <span class="dsn-bg-arrow"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('routes.page', 'iletisim') }}">
-                            <span class="dsn-title-menu">İletişim</span>
+                        <a href="{{ route('routes.page', __('link5')) }}">
+                            <span class="dsn-title-menu">{{ __('menu5') }}</span>
                             <span class="dsn-meta-menu">05</span>
                             <span class="dsn-bg-arrow"></span>
                         </a>
+                    </li>
+                    <li class="dsn-drop-down">
+                        <a href="javascript:void(0);" class="user-no-selection">
+
+                            <span class="dsn-title-menu">{{ __('lang1') }}</span>
+                            <span class="dsn-meta-menu">02</span>
+                            <span class="dsn-bg-arrow"></span>
+                        </a>
+                        <ul>
+                            <li class="dsn-back-menu">
+                                <img src="{{ asset('assets/img/left-chevron.svg') }}" alt="{{ __('name') }}">
+                                <span class="dsn-title-menu">{{ __('menuBack') }}</span>
+                            </li>
+                            @hasSection ('lang')
+                                @yield('lang')
+                            @else
+                                @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                                    <li>
+                                        <a rel="alternate" hreflang="{{ $localeCode }}"
+                                            href="{{ LaravelLocalization::getLocalizedURL($localeCode) }}">
+                                            <span class="dsn-title-menu">{{ $properties['native'] }}</span>
+                                            <span class="dsn-meta-menu">{{ $localeCode }}</span>
+                                        </a>
+                                    </li>
+                                @endforeach
+                            @endif
+                        </ul>
                     </li>
                 </ul>
 
@@ -159,9 +186,9 @@
                     <div class="col-md-2 footer-block-item">
                         <div class="footer-block block-logo">
                             <a href="{{ route('routes.homepage') }}" class="logo-footer m-auto">
-                                <img src="{{ asset('assets/img/logo.svg') }}" alt=""
+                                <img src="{{ asset('assets/img/logo.svg') }}" alt="{{ __('name') }}"
                                     class="logo-dark cover-bg-img">
-                                <img src="{{ asset('assets/img/logo.svg') }}" alt=""
+                                <img src="{{ asset('assets/img/logo.svg') }}" alt="{{ __('name') }}"
                                     class="logo-light cover-bg-img">
                             </a>
                         </div>
@@ -169,7 +196,8 @@
                     <div class="col-md-3 footer-block-item">
                         <div class="footer-block">
                             <p class="subtitle p-relative line-shap  line-shap-after mb-20">
-                                <span class="pl-10 pr-10 background-section heading-color text-uppercase">Adres</span>
+                                <span
+                                    class="pl-10 pr-10 background-section heading-color text-uppercase">{{ __('footer1') }}</span>
                             </p>
                             <p>{{ $Contact->address }}</p>
                             @empty(!$Contact->address2)
@@ -180,16 +208,16 @@
                     <div class="col-md-3 footer-block-item">
                         <div class="footer-block col-menu">
                             <p class="subtitle p-relative line-shap  line-shap-after mb-20">
-                                <span class="pl-10 pr-10 background-section heading-color text-uppercase">Hızlı
-                                    erişim</span>
+                                <span
+                                    class="pl-10 pr-10 background-section heading-color text-uppercase">{{ __('footer2') }}</span>
                             </p>
                             <ul>
-                                <li><a href="{{ route('routes.homepage') }}">Anasayfa</a></li>
-                                <li><a href="{{ route('routes.page', 'hakkimizda') }}">Biz Kimiz</a></li>
-                                <li><a href="{{ route('routes.page', 'insan-kaynaklari') }}">İnsan Kaynakları</a></li>
-                                <li><a href="{{ route('routes.page', 'projeler') }}">Projeler</a></li>
-                                <li><a href="{{ route('routes.page', 'haberler') }}">Haberler</a></li>
-                                <li><a href="{{ route('routes.page', 'iletisim') }}">İletişim</a></li>
+                                <li><a href="{{ route('routes.homepage') }}">{{ __('menu1') }}</a></li>
+                                <li><a href="{{ route('routes.page', __('link2_1')) }}">{{ __('menu2_1') }}</a></li>
+                                <li><a href="{{ route('routes.page', __('link2_2')) }}">{{ __('menu2_2') }}</a></li>
+                                <li><a href="{{ route('routes.page', __('link3')) }}">{{ __('menu3') }}</a></li>
+                                <li><a href="{{ route('routes.page', __('link4')) }}">{{ __('menu4') }}</a></li>
+                                <li><a href="{{ route('routes.page', __('link5')) }}">{{ __('menu5') }}</a></li>
                             </ul>
                         </div>
                     </div>
@@ -230,7 +258,7 @@
                                 @endempty
                                 @empty(!$Social->linkedin)
                                     <li>
-                                        <a href="{{$Social->linkedin}}" target="_blank">
+                                        <a href="{{ $Social->linkedin }}" target="_blank">
                                             <i class="fab fa-linkedin"></i>
                                             <span>In</span>
                                         </a>
@@ -242,8 +270,7 @@
                 </div>
                 <div class="footer-credits  border-top pt-30 mt-30">
                     <div class="block">
-                        <p class="copyright">© 2023. Tüm Hakları Saklıdır. <a href="https://instagram.com/mirarsl"
-                                target="_blank">Batuhan Arslan.</a> tarafından tasarlanmıştır.
+                        <p class="copyright">{!! __('footer3', ['year' => date('Y'), 'URL' => 'https://instagram.com/mirarsl']) !!}
                         </p>
                     </div>
                 </div>
@@ -255,11 +282,11 @@
     <div class="cursor">
 
         <div class="cursor-helper">
-            <span class="cursor-drag">Sürükle</span>
-            <span class="cursor-view">İncele</span>
+            <span class="cursor-drag">{{ __('cursor1') }}</span>
+            <span class="cursor-view">{{ __('cursor2') }}</span>
             <span class="cursor-open"><i class="fas fa-plus"></i></span>
-            <span class="cursor-close">Kapat</span>
-            <span class="cursor-play">Oynat</span>
+            <span class="cursor-close">{{ __('cursor3') }}</span>
+            <span class="cursor-play">{{ __('cursor4') }}</span>
             <span class="cursor-next"><i class="fas fa-chevron-right"></i></span>
             <span class="cursor-prev"><i class="fas fa-chevron-left"></i></span>
         </div>
