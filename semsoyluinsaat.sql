@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1:3306
--- Üretim Zamanı: 22 Tem 2023, 15:05:50
+-- Üretim Zamanı: 23 Tem 2023, 12:15:36
 -- Sunucu sürümü: 8.0.31
 -- PHP Sürümü: 8.1.13
 
@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS `abouts` (
 --
 
 INSERT INTO `abouts` (`id`, `about`, `mission`, `vision`, `history`, `created_at`, `updated_at`, `image`, `image2`, `image3`, `history1`, `history2`, `history3`) VALUES
-(1, '<p>Yenilik&ccedil;i inşaat modelimiz, hızlı ve verimli bir şekilde yapıların tasarımını ve inşasını ger&ccedil;ekleştiriyoruz. Uzman ekibimizle y&uuml;ksek kalitede yapılar &uuml;retiyoruz. G&uuml;venilirlik, m&uuml;kemmellik ve yenilik&ccedil;ilikle tanışın!</p>\n<p>In veniam aute incididunt aliquip ex culpa ex aliquip cillum dolor adipisicing dolore dolor culpa voluptate ea adipisicing enim consectetur qui qui consequat dolore commodo cillum proident officia veniam pariatur veniam eiusmod sit cillum.</p>', '<p>Yenilik&ccedil;i inşaat modelimiz, hızlı ve verimli bir şekilde yapıların tasarımını ve inşasını ger&ccedil;ekleştiriyoruz. Uzman ekibimizle y&uuml;ksek kalitede yapılar &uuml;retiyoruz. G&uuml;venilirlik, m&uuml;kemmellik ve yenilik&ccedil;ilikle tanışın!</p>\n<p>In veniam aute incididunt aliquip ex culpa ex aliquip cillum dolor adipisicing dolore dolor culpa voluptate ea adipisicing enim consectetur qui qui consequat dolore commodo cillum proident officia veniam pariatur veniam eiusmod sit cillum.</p>', '<p>Enim reprehenderit laborum cupidatat laboris cillum veniam reprehenderit eiusmod amet. Voluptate occaecat eiusmod laborum magna officia velit commodo nisi cillum irure laborum adipisicing cupidatat. Cillum ullamco ut tempor incididunt est reprehenderit tempor proident minim.</p>', '<p>Enim reprehenderit laborum cupidatat laboris cillum veniam reprehenderit eiusmod amet. Voluptate occaecat eiusmod laborum magna officia velit commodo nisi cillum irure laborum adipisicing cupidatat. Cillum ullamco ut tempor incididunt est reprehenderit tempor proident minim.</p>', '2023-07-20 05:27:00', '2023-07-22 09:10:26', 'abouts\\July2023\\qefdQvjSNxwq9URjhLBu.jpg', 'abouts\\July2023\\iOzUttVpRIIdhQSbii0h.jpg', 'abouts\\July2023\\bSMNl8nE5dBzzco38qMw.jpg', 'abouts\\July2023\\fImcz1Ecknuf0dv0estI.jpg', 'abouts\\July2023\\4UHlscN0fwZzRhhKATSo.jpg', 'abouts\\July2023\\lCdndQVi8D9UdlgH2oza.jpg');
+(1, '<p>Yenilik&ccedil;i inşaat modelimiz, hızlı ve verimli bir şekilde yapıların tasarımını ve inşasını ger&ccedil;ekleştiriyoruz. Uzman ekibimizle y&uuml;ksek kalitede yapılar &uuml;retiyoruz. G&uuml;venilirlik, m&uuml;kemmellik ve yenilik&ccedil;ilikle tanışın!</p>', '<p>Yenilik&ccedil;i inşaat modelimiz, hızlı ve verimli bir şekilde yapıların tasarımını ve inşasını ger&ccedil;ekleştiriyoruz. Uzman ekibimizle y&uuml;ksek kalitede yapılar &uuml;retiyoruz. G&uuml;venilirlik, m&uuml;kemmellik ve yenilik&ccedil;ilikle tanışın!</p>', '<p>Enim reprehenderit laborum cupidatat laboris cillum veniam reprehenderit eiusmod amet. Voluptate occaecat eiusmod laborum magna officia velit commodo nisi cillum irure laborum adipisicing cupidatat. Cillum ullamco ut tempor incididunt est reprehenderit tempor proident minim.</p>', '<p>Enim reprehenderit laborum cupidatat laboris cillum veniam reprehenderit eiusmod amet. Voluptate occaecat eiusmod laborum magna officia velit commodo nisi cillum irure laborum adipisicing cupidatat. Cillum ullamco ut tempor incididunt est reprehenderit tempor proident minim.</p>', '2023-07-20 05:27:00', '2023-07-23 08:36:39', 'abouts\\July2023\\qefdQvjSNxwq9URjhLBu.jpg', 'abouts\\July2023\\iOzUttVpRIIdhQSbii0h.jpg', 'abouts\\July2023\\bSMNl8nE5dBzzco38qMw.jpg', 'abouts\\July2023\\fImcz1Ecknuf0dv0estI.jpg', 'abouts\\July2023\\4UHlscN0fwZzRhhKATSo.jpg', 'abouts\\July2023\\lCdndQVi8D9UdlgH2oza.jpg');
 
 -- --------------------------------------------------------
 
@@ -104,10 +104,10 @@ CREATE TABLE IF NOT EXISTS `counters` (
 --
 
 INSERT INTO `counters` (`id`, `status`, `ordering`, `title`, `text`, `count`, `created_at`, `updated_at`) VALUES
-(1, 1, 999, 'Yıllık Derin Tecrübe', 'İnşaat Sektöründe Köklü Deneyimle Öne Çıkıyoruz. Uzmanlığımızla Projelerinizi Güvenle İnşa Ediyoruz.', 15, '2023-07-22 07:35:42', '2023-07-22 07:35:42'),
-(2, 1, 999, 'Tamamlanan Proje', 'Hızla bu sayıyı arttırmaya devam ediyoruz.', 100, '2023-07-22 07:36:02', '2023-07-22 07:36:02'),
-(3, 1, 999, 'Mutlu Müşteri', 'Projelerimizi tercih eden mutlu müşteri sayımız bizim için çok önemli.', 2000, '2023-07-22 07:36:15', '2023-07-22 07:36:15'),
-(4, 1, 999, 'Devam Eden Proje', 'Hiç durmadan projelerimize devam ediyoruz.', 22, '2023-07-22 07:36:30', '2023-07-22 07:36:30');
+(1, 1, 999, 'Yıllık Derin Tecrübe', 'İnşaat Sektöründe Köklü Deneyimle Öne Çıkıyoruz. Uzmanlığımızla Projelerinizi Güvenle İnşa Ediyoruz.', 15, '2023-07-22 07:35:00', '2023-07-23 08:40:17'),
+(2, 1, 999, 'Tamamlanan Proje', 'Hızla bu sayıyı arttırmaya devam ediyoruz.', 100, '2023-07-22 07:36:00', '2023-07-23 08:40:00'),
+(3, 1, 999, 'Mutlu Müşteri', 'Projelerimizi tercih eden mutlu müşteri sayımız bizim için çok önemli.', 2000, '2023-07-22 07:36:00', '2023-07-23 08:39:40'),
+(4, 1, 999, 'Devam Eden Proje', 'Hiç durmadan projelerimize devam ediyoruz.', 22, '2023-07-22 07:36:00', '2023-07-23 08:39:23');
 
 -- --------------------------------------------------------
 
@@ -436,7 +436,14 @@ CREATE TABLE IF NOT EXISTS `messages` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Tablo döküm verisi `messages`
+--
+
+INSERT INTO `messages` (`id`, `name`, `email`, `message`, `created_at`, `updated_at`) VALUES
+(19, 'Batuhan Arslan', 'test@mail.com', 'test', '2023-07-23 09:12:51', '2023-07-23 09:12:51');
 
 -- --------------------------------------------------------
 
@@ -539,8 +546,8 @@ INSERT INTO `pages` (`id`, `title`, `text`, `meta_title`, `meta_desc`, `meta_tag
 (1, 'Anasayfa', '', 'Anasayfa', 'Şemsoylu İnşaat Web Sitesi anasayfası', 'şemsoylu inşaat', 'pages\\July2023\\GPJJA9vHEI1LKmiSsIFM.jpg', '2023-07-20 03:53:00', '2023-07-20 04:00:55', 'anasayfa'),
 (2, 'Kalite İnşaa Ediyoruz', '', 'Biz Kimiz', '', '', NULL, '2023-07-20 04:01:00', '2023-07-22 09:14:59', 'hakkimizda'),
 (5, 'İnsan Kaynakları', '<p>Bizimle &ccedil;alışmak i&ccedil;in cv\'nizi <a href=\"mailto:info@semsoyluinsaat.com.tr\">info@semsoyluinsaat.com.tr</a> mail adresine ileterek, bizimle &ccedil;alışam fırsatı yakalayabiliriniz..</p>', 'İnsan Kaynakları', '', '', NULL, '2023-07-20 04:02:00', '2023-07-22 09:17:34', 'insan-kaynaklari'),
-(6, 'Projeler', '', 'Projeler', '', '', NULL, '2023-07-20 04:03:06', '2023-07-20 04:03:06', 'projeler'),
-(7, 'Haberler', '', 'Haberler', '', '', NULL, '2023-07-20 04:03:26', '2023-07-20 04:03:26', 'haberler'),
+(6, 'Projeler', '', 'Projeler', '', '', NULL, '2023-07-20 04:03:00', '2023-07-23 08:35:17', 'projeler'),
+(7, 'Haberler', '', 'Haberler', '', '', NULL, '2023-07-20 04:03:00', '2023-07-23 08:35:25', 'haberler'),
 (8, 'İletişime Geç', '', 'İletişim', '', '', NULL, '2023-07-20 04:03:00', '2023-07-22 10:39:43', 'iletisim');
 
 -- --------------------------------------------------------
@@ -831,7 +838,7 @@ CREATE TABLE IF NOT EXISTS `projects` (
 
 INSERT INTO `projects` (`id`, `status`, `ordering`, `title`, `text`, `image`, `video`, `type`, `stage`, `spot`, `created_at`, `updated_at`, `gallery`, `slug`) VALUES
 (1, 1, 999, 'Nezahat Koral ', '<p>Minim reprehenderit et do id eiusmod aliquip ullamco aute adipisicing et magna nulla dolore voluptate ea elit ut cillum ex non aliquip qui excepteur ut laboris consectetur sunt officia dolor consectetur in commodo eu dolore incididunt sed quis minim.</p>', 'projects\\July2023\\XU8m1gdplIIAYNBnRfTR.jpg', '[]', 'Bina', '1', 'Hayallerinizdeki eve sahip olacaksınız!', '2023-07-22 07:24:00', '2023-07-22 08:27:14', '[\"projects\\\\July2023\\\\FOwkQ3LfbO7YuLpzFdeg.jpg\",\"projects\\\\July2023\\\\VENvKZHr0ozUyONoFnPK.jpg\",\"projects\\\\July2023\\\\zg8ljIqfaDNLMikOZHU5.jpg\",\"projects\\\\July2023\\\\oRsV82ipnFBqruwPAiDx.jpg\",\"projects\\\\July2023\\\\ASMcL3FgJ6cTpgXOXk66.jpg\",\"projects\\\\July2023\\\\VnlJ1B2XhDJvR7jJTcJQ.jpg\",\"projects\\\\July2023\\\\B1MfhakTpYIkJGeVE0EA.jpg\"]', 'nezahat-koral'),
-(2, 1, 999, 'Next', '', 'projects\\July2023\\G7T02SdIHTN1MOisha4p.jpg', '[]', 'Site', '2', 'deneme', '2023-07-22 09:52:24', '2023-07-22 09:52:24', NULL, 'next');
+(2, 1, 999, 'Next', '', 'projects\\July2023\\G7T02SdIHTN1MOisha4p.jpg', '[]', 'Site', '2', 'deneme', '2023-07-22 09:52:00', '2023-07-23 08:38:43', NULL, 'next');
 
 -- --------------------------------------------------------
 
@@ -882,9 +889,9 @@ CREATE TABLE IF NOT EXISTS `services` (
 --
 
 INSERT INTO `services` (`id`, `status`, `ordering`, `title`, `text`, `icon`, `created_at`, `updated_at`) VALUES
-(1, 1, 999, 'Tasarım ve Planlama', 'İnşaat projelerinizin başarısı için etkili tasarım ve planlama hizmetleri sunuyoruz. Uzman mimarlarımız ve mühendislerimiz, hayallerinizi gerçeğe dönüştürecek özgün ve işlevsel tasarımlar oluştururken, projenizin tüm aşamalarını titizlikle planlıyoruz.', 'services\\July2023\\Bduns9sXf2mam0uVSjm2.png', '2023-07-22 06:46:17', '2023-07-22 06:46:17'),
-(2, 1, 999, 'İnşaat ve Yapım', 'Deneyimli ekiplerimizle kalite standartlarına uygun olarak inşaat ve yapım hizmetleri sunuyoruz. Modern ekipmanlarımız ve ileri teknolojilerimizle, süreçleri verimli bir şekilde yönetiyor ve projenizin zamanında ve bütçeye uygun olarak tamamlanmasını sağlıyoruz.', 'services\\July2023\\i9Y0aUhKXKWLdDiaSrFC.png', '2023-07-22 06:47:13', '2023-07-22 06:47:13'),
-(3, 1, 999, 'Proje Yönetimi ve Danışmanlık', 'Projenizin her aşamasında size destek olmak için proje yönetimi ve danışmanlık hizmetleri sunuyoruz. İş takibi, maliyet kontrolü, kaynak yönetimi ve risk analizi gibi konularda uzmanlığımızı kullanarak, projenizin başarılı bir şekilde ilerlemesini ve hedeflerinize ulaşmasını sağlıyoruz.', 'services\\July2023\\Z0OCXIX2yW1VhgKgwKrS.png', '2023-07-22 06:47:43', '2023-07-22 06:47:43');
+(1, 1, 999, 'Tasarım ve Planlama', 'İnşaat projelerinizin başarısı için etkili tasarım ve planlama hizmetleri sunuyoruz. Uzman mimarlarımız ve mühendislerimiz, hayallerinizi gerçeğe dönüştürecek özgün ve işlevsel tasarımlar oluştururken, projenizin tüm aşamalarını titizlikle planlıyoruz.', 'services\\July2023\\Bduns9sXf2mam0uVSjm2.png', '2023-07-22 06:46:00', '2023-07-23 08:37:39'),
+(2, 1, 999, 'İnşaat ve Yapım', 'Deneyimli ekiplerimizle kalite standartlarına uygun olarak inşaat ve yapım hizmetleri sunuyoruz. Modern ekipmanlarımız ve ileri teknolojilerimizle, süreçleri verimli bir şekilde yönetiyor ve projenizin zamanında ve bütçeye uygun olarak tamamlanmasını sağlıyoruz.', 'services\\July2023\\i9Y0aUhKXKWLdDiaSrFC.png', '2023-07-22 06:47:00', '2023-07-23 08:37:21'),
+(3, 1, 999, 'Proje Yönetimi ve Danışmanlık', 'Projenizin her aşamasında size destek olmak için proje yönetimi ve danışmanlık hizmetleri sunuyoruz. İş takibi, maliyet kontrolü, kaynak yönetimi ve risk analizi gibi konularda uzmanlığımızı kullanarak, projenizin başarılı bir şekilde ilerlemesini ve hedeflerinize ulaşmasını sağlıyoruz.', 'services\\July2023\\Z0OCXIX2yW1VhgKgwKrS.png', '2023-07-22 06:47:00', '2023-07-23 08:37:04');
 
 -- --------------------------------------------------------
 
@@ -966,7 +973,7 @@ CREATE TABLE IF NOT EXISTS `translations` (
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `translations_table_name_column_name_foreign_key_locale_unique` (`table_name`,`column_name`,`foreign_key`,`locale`)
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Tablo döküm verisi `translations`
@@ -978,22 +985,48 @@ INSERT INTO `translations` (`id`, `table_name`, `column_name`, `foreign_key`, `l
 (3, 'pages', 'slug', 1, 'ar', 'alsfhh-alreysyh', '2023-07-20 04:00:55', '2023-07-20 04:00:55'),
 (4, 'pages', 'title', 2, 'ar', 'معلومات عنا', '2023-07-20 04:01:13', '2023-07-20 04:01:13'),
 (5, 'pages', 'meta_title', 2, 'ar', 'معلومات عنا', '2023-07-20 04:01:13', '2023-07-20 04:01:13'),
-(6, 'pages', 'slug', 2, 'ar', 'malwmat-ana', '2023-07-20 04:01:13', '2023-07-20 04:01:13'),
+(6, 'pages', 'slug', 2, 'ar', 'maelumat-eanaa', '2023-07-20 04:01:13', '2023-07-23 08:34:37'),
 (13, 'pages', 'title', 5, 'ar', 'الموارد البشرية', '2023-07-20 04:02:48', '2023-07-20 04:02:48'),
 (14, 'pages', 'meta_title', 5, 'ar', 'الموارد البشرية', '2023-07-20 04:02:48', '2023-07-20 04:02:48'),
-(15, 'pages', 'slug', 5, 'ar', 'almward-albshryh', '2023-07-20 04:02:48', '2023-07-20 04:02:48'),
+(15, 'pages', 'slug', 5, 'ar', 'almawarid-albasharia', '2023-07-20 04:02:48', '2023-07-23 08:34:49'),
 (16, 'pages', 'title', 6, 'ar', 'المشاريع', '2023-07-20 04:03:06', '2023-07-20 04:03:06'),
 (17, 'pages', 'meta_title', 6, 'ar', 'المشاريع', '2023-07-20 04:03:06', '2023-07-20 04:03:06'),
-(18, 'pages', 'slug', 6, 'ar', 'almsharya', '2023-07-20 04:03:06', '2023-07-20 04:03:06'),
+(18, 'pages', 'slug', 6, 'ar', 'almasharie', '2023-07-20 04:03:06', '2023-07-23 08:35:17'),
 (19, 'pages', 'title', 7, 'ar', 'أخبار', '2023-07-20 04:03:26', '2023-07-20 04:03:26'),
 (20, 'pages', 'meta_title', 7, 'ar', 'أخبار', '2023-07-20 04:03:26', '2023-07-20 04:03:26'),
 (21, 'pages', 'slug', 7, 'ar', 'akhbar', '2023-07-20 04:03:26', '2023-07-20 04:03:26'),
 (22, 'pages', 'title', 8, 'ar', 'تواصل', '2023-07-20 04:03:47', '2023-07-20 04:03:47'),
 (23, 'pages', 'meta_title', 8, 'ar', 'تواصل', '2023-07-20 04:03:47', '2023-07-20 04:03:47'),
-(24, 'pages', 'slug', 8, 'ar', 'twasl', '2023-07-20 04:03:47', '2023-07-20 04:03:47'),
-(25, 'projects', 'title', 1, 'ar', 'Nezahat Koral Binası', '2023-07-22 08:26:19', '2023-07-22 08:26:19'),
-(26, 'projects', 'spot', 1, 'ar', 'açıklama', '2023-07-22 08:26:19', '2023-07-22 08:26:19'),
-(27, 'projects', 'type', 1, 'ar', 'Bina', '2023-07-22 08:26:19', '2023-07-22 08:26:19');
+(24, 'pages', 'slug', 8, 'ar', 'tuasil', '2023-07-20 04:03:47', '2023-07-23 08:35:33'),
+(25, 'projects', 'title', 1, 'ar', 'نزهة كورال', '2023-07-22 08:26:19', '2023-07-23 08:38:25'),
+(26, 'projects', 'spot', 1, 'ar', 'سيكون لديك منزل أحلامك!', '2023-07-22 08:26:19', '2023-07-23 08:38:25'),
+(27, 'projects', 'type', 1, 'ar', 'مبنى', '2023-07-22 08:26:19', '2023-07-23 08:38:25'),
+(28, 'abouts', 'about', 1, 'ar', '<p>نموذج البناء المبتكر الخاص بنا ، نقوم بتصميم وبناء الهياكل بسرعة وكفاءة. نحن ننتج هياكل عالية الجودة مع فريق الخبراء لدينا. تعرف على الموثوقية والتميز والابتكار!</p>', '2023-07-23 08:36:39', '2023-07-23 08:36:39'),
+(29, 'abouts', 'mission', 1, 'ar', '<p>نموذج البناء المبتكر الخاص بنا ، نقوم بتصميم وبناء الهياكل بسرعة وكفاءة. نحن ننتج هياكل عالية الجودة مع فريق الخبراء لدينا. تعرف على الموثوقية والتميز والابتكار!</p>', '2023-07-23 08:36:39', '2023-07-23 08:36:39'),
+(30, 'abouts', 'vision', 1, 'ar', '<p>نموذج البناء المبتكر الخاص بنا ، نقوم بتصميم وبناء الهياكل بسرعة وكفاءة. نحن ننتج هياكل عالية الجودة مع فريق الخبراء لدينا. تعرف على الموثوقية والتميز والابتكار!</p>', '2023-07-23 08:36:39', '2023-07-23 08:36:39'),
+(31, 'abouts', 'history', 1, 'ar', '<p>نموذج البناء المبتكر الخاص بنا ، نقوم بتصميم وبناء الهياكل بسرعة وكفاءة. نحن ننتج هياكل عالية الجودة مع فريق الخبراء لدينا. تعرف على الموثوقية والتميز والابتكار!</p>', '2023-07-23 08:36:39', '2023-07-23 08:36:39'),
+(32, 'services', 'title', 3, 'ar', 'إدارة المشاريع والاستشارات', '2023-07-23 08:37:04', '2023-07-23 08:37:04'),
+(33, 'services', 'text', 3, 'ar', 'نقدم خدمات إدارة المشاريع والاستشارات لدعمك في كل مرحلة من مراحل مشروعك. باستخدام خبرتنا في تتبع الأعمال والتحكم في التكاليف وإدارة الموارد وتحليل المخاطر ، فإننا نضمن أن مشروعك يتقدم بنجاح ويصل إلى أهدافك.', '2023-07-23 08:37:04', '2023-07-23 08:37:04'),
+(34, 'services', 'title', 2, 'ar', 'البناء والتشييد', '2023-07-23 08:37:21', '2023-07-23 08:37:21'),
+(35, 'services', 'text', 2, 'ar', 'نحن نقدم خدمات البناء والتشييد وفقًا لمعايير الجودة مع فرقنا ذات الخبرة. مع معداتنا الحديثة وتقنياتنا المتقدمة ، ندير العمليات بكفاءة ونضمن اكتمال مشروعك في الوقت المحدد وفي حدود الميزانية.', '2023-07-23 08:37:21', '2023-07-23 08:37:21'),
+(36, 'services', 'title', 1, 'ar', 'التصميم والتخطيط', '2023-07-23 08:37:39', '2023-07-23 08:37:39'),
+(37, 'services', 'text', 1, 'ar', 'نحن نقدم خدمات تصميم وتخطيط فعالة لنجاح مشاريع البناء الخاصة بك. بينما يقوم المهندسون المعماريون والمهندسون لدينا بإنشاء تصميمات أصلية وعملية من شأنها أن تحقق أحلامك ، فإننا نخطط بدقة لجميع مراحل مشروعك.', '2023-07-23 08:37:39', '2023-07-23 08:37:39'),
+(38, 'projects', 'text', 1, 'ar', '<p>الحد الأدنى من إعادة النظر والقيام بمعرفة أيوسمود ألكيب أو ألامكو أو أديبيسيسينج وماجنا لا دولور فولوبتاتي أو النخبة من دون أن يكون لها أثر غير مسبوق.</p>', '2023-07-23 08:38:25', '2023-07-23 08:38:25'),
+(39, 'projects', 'slug', 1, 'ar', 'nzhh-kwral', '2023-07-23 08:38:25', '2023-07-23 08:38:25'),
+(40, 'projects', 'title', 2, 'ar', 'التالي', '2023-07-23 08:38:43', '2023-07-23 08:38:58'),
+(41, 'projects', 'spot', 2, 'ar', 'adasda', '2023-07-23 08:38:43', '2023-07-23 08:38:43'),
+(42, 'projects', 'type', 2, 'ar', 'مبنى', '2023-07-23 08:38:43', '2023-07-23 08:38:43'),
+(43, 'projects', 'slug', 2, 'ar', 'altaly', '2023-07-23 08:38:43', '2023-07-23 08:38:58'),
+(44, 'counters', 'title', 4, 'ar', 'مشروع مستمر', '2023-07-23 08:39:23', '2023-07-23 08:39:23'),
+(45, 'counters', 'text', 4, 'ar', 'نواصل مشاريعنا دون توقف.', '2023-07-23 08:39:23', '2023-07-23 08:39:23'),
+(46, 'counters', 'title', 3, 'ar', 'عميل سعيد', '2023-07-23 08:39:40', '2023-07-23 08:39:40'),
+(47, 'counters', 'text', 3, 'ar', 'عدد العملاء السعداء الذين يفضلون مشاريعنا مهم جدًا بالنسبة لنا.', '2023-07-23 08:39:40', '2023-07-23 08:39:40'),
+(48, 'counters', 'title', 2, 'ar', 'مشروع مكتمل', '2023-07-23 08:40:00', '2023-07-23 08:40:00'),
+(49, 'counters', 'text', 2, 'ar', 'نواصل زيادة هذا العدد بسرعة.', '2023-07-23 08:40:00', '2023-07-23 08:40:00'),
+(50, 'counters', 'title', 1, 'ar', 'سنوات من الخبرة العميقة', '2023-07-23 08:40:17', '2023-07-23 08:40:17'),
+(51, 'counters', 'text', 1, 'ar', 'نأتي إلى المقدمة من خلال خبرتنا المتجذرة في قطاع البناء. بفضل خبرتنا ، نبني مشاريعك بثقة.', '2023-07-23 08:40:17', '2023-07-23 08:40:17'),
+(52, 'news', 'title', 1, 'ar', 'نحن نبدأ مشروع نزهات كورال', '2023-07-23 08:40:33', '2023-07-23 08:40:33'),
+(53, 'news', 'slug', 1, 'ar', 'nhn-nbda-mshrwa-nzhat-kwral', '2023-07-23 08:40:33', '2023-07-23 08:40:33');
 
 -- --------------------------------------------------------
 
