@@ -152,7 +152,7 @@
                             <span class="dsn-meta-menu">02</span>
                             <span class="dsn-bg-arrow"></span>
                         </a>
-                        <ul>
+                        {{-- <ul>
                             <li class="dsn-back-menu">
                                 <img src="{{ asset('assets/img/left-chevron.svg') }}" alt="{{ __('name') }}">
                                 <span class="dsn-title-menu">{{ __('menuBack') }}</span>
@@ -170,7 +170,7 @@
                                     </li>
                                 @endforeach
                             @endif
-                        </ul>
+                        </ul> --}}
                     </li>
                 </ul>
 
@@ -199,9 +199,11 @@
                                 <span
                                     class="pl-10 pr-10 background-section heading-color text-uppercase">{{ __('footer1') }}</span>
                             </p>
+                            <strong>Satış Ofisi</strong>
                             <p>{{ $Contact->address }}</p>
                             @empty(!$Contact->address2)
-                                <p class="sm-title-block">{{ $Contact->address2 }}</p>
+                                <strong>Genel Ofis</strong>
+                                <p>{{ $Contact->address2 }}</p>
                             @endempty
                         </div>
                     </div>
