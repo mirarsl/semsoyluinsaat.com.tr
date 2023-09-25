@@ -304,6 +304,7 @@
     <script src="{{ asset('assets/js/plugins.min.js') }}"></script>
     <script src="{{ asset('assets/js/dsn-grid.js') }}"></script>
     <script src="{{ asset('assets/js/custom.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     @yield('scripts')
 </body>
 

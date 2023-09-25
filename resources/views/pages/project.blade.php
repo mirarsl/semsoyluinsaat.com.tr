@@ -55,6 +55,21 @@
                                 <h5 class="sm-title-block mb-5">{{__('project4')}}</h5>
                                 <span>{{ $Project->stage == 1 ? __('project1') : __('project2') }}</span>
                             </li>
+                            @if($Project->video != "")
+                            <li>
+                                <span>
+                                     <h5 class="sm-title-block mb-5">Tanıtım Filmi</h5>
+                                     <div id="video" >
+                                        <video width="100%" height="auto" controls="controls">
+                                            <source src="{{asset($Project->video)}}" type="video/mp4">
+                                            <source src="{{asset($Project->video)}}" type="video/ogg">
+                                            <source src="{{asset($Project->video)}}" type="video/webm">
+                                            Tarıyıcınız video dosyası desteklemiyor.
+                                        </video>
+                                    </div>
+                                </span>
+                            </li>
+                            @endif
                         </ul>
                     </div>
                 </div>
